@@ -9,6 +9,8 @@ app.get('/', (req, res) => {
   res.send('Hello World!')
 })
 
+app.use("/", router);
+
 //router can be used for modularity
 router.get('/', (req, res) => {
   res.send('Birds home page')
